@@ -1,0 +1,163 @@
+/*
+    #F7F7F7
+    #EEEEEE
+    #393E46
+    #929AAB
+*/
+body {
+    margin: 0;
+}
+.main_container {
+    
+}
+
+.header a {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    float:right;
+    margin-right: 5%;
+    margin-top: 5%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    color: rgb(253, 214, 221);
+}
+
+.header {
+    height: 100px;
+    box-shadow: 0px 0px 1px 1px #393E46;
+    background-color: #000000;
+    color: #EEEEEE;
+}
+
+.site_body {
+}
+
+.profile {
+
+}
+
+.profile img {
+    width: 100%;
+}
+
+@keyframes moveRight {
+    from {
+        left: 10%;
+        opacity: 0;
+    } to {
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 80%;
+        opacity: 0;
+    }
+    25% {
+        left: 80%;
+        opacity: 0;
+    } 
+    100% {
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile h1 {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    letter-spacing: 8px;
+    top: 300px;
+    left: 50%;
+    font-size: 40px;
+    transform: translateX(-50%);
+    color: white;
+    animation-name: moveRight;
+    animation-duration: 2s;
+}
+
+.profile h2 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 16px;
+    white-space: nowrap;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    animation-name: moveLeft;
+    animation-duration: 3s;
+}
+
+.profile_button {
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 50px;
+    animation-name: fadeIn;
+    animation-duration: 4.5s;
+    
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.profile_button:hover {
+    background-color: rgb(253, 214, 221);
+}
+
+.profile h3 {
+    margin: 0;
+    margin-top: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+    animation-name: fadeIn;
+    animation-duration: 4.5s;
+}
+
+.project_template {
+    
+}
+
+
+.template_body {
+}
+
+.text_area {
+    float: left;
+    color: #393E46;
+    
+}
+
+.img_area {
+    float: left;
+}
