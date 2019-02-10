@@ -1,0 +1,103 @@
+@keyframes moveRight {
+    from {
+        left: -100%;
+        opacity: 0;
+    } to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+    25% {
+        left: 100%;
+        opacity: 0;
+    } 
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile_text_area {
+    position: absolute;
+    float: top;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile h1 {
+    position: relative;
+    font-family: Arial, sans-serif;
+    letter-spacing: 8px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    white-space: nowrap;
+}
+
+.profile h2 {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 26px;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    animation-name: moveLeft;
+    animation-duration: 3s;
+}
+
+
+.profile_text_area .profile_button {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    animation-name: fadeIn;
+    animation-duration: 4.5s;
+    
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.profile .profile_button:hover {
+    background-color: rgb(253, 214, 221);
+    cursor: pointer;
+}
+
+.profile_button h3 {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    top:50%;
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000000;
+    animation-name: fadeIn;
+    animation-duration: 4.5s;
+}
