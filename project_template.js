@@ -2,15 +2,26 @@ class projectTemplate extends HTMLElement {
 
     constructor() {
         super();
-        this.innerHTML = `
+        const root = this.attachShadow({mode: "open"});
+        //root.appendChild(this.innerHTML);
+        this.shadowRoot.innerHTML = `
+            <style>
+                .template_body {
+                    background-color: ${this.getAttribute("bgColor")};
+                    color: ${this.getAttribute("txtColor")};
+                }
+                .img_area {
+                    display: inline-block;
+                }
+            </style>
             <div class="template_body">
                 <div class="text_area">
-                    <h3>Project name</h3>
+                    <h2>Project name</h2>
                     <p>text text text text text 
                     text text text text text 
                     text text text text text 
                     text text text text 
-                    text text text text text text<br/><br/> 
+                    text text text text text text<br/>
                     text text text text text 
                     text text text text text text 
                     text text text text text text 
