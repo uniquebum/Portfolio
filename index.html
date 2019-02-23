@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" type="text/css" href="profileText.css"/>
-        <link rel="stylesheet" type="text/css" href="style_media_width_800px.css"/>
+        <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="public/css/profileText.css"/>
+        <link rel="stylesheet" type="text/css" href="public/css/style_media_width_800px.css"/>
     </head>
     <body>
         <div class="main_container">
             <div class="header">
-                <a href="">CONTACT ME</a>
-                <a href="">PROJECTS</a>
-                <a href="">ABOUT ME</a>           
+                <p class="header_text">CONTACT ME</p>
+                <p class="header_text">PROJECTS</p>
+                <p class="header_text about_me">ABOUT ME</p>           
             </div>
             <div class="site_body">
                 <div class="profile">
                     <img src="public/img/placeholder_profile2.jpg" alt="profile_img"/>
-                    <div class="profile_text_area">
-                        <h1>MIRO RUOPSA</h1>        
+                    <div id="profile_text_area" class="profile_text_area">
+                        <h1 id="name_h1">MIRO RUOPSA</h1>        
                         <h2 id="glitchy_header" txt1="SPACE" txt2="PHYSICIST">SOFTWARE DEVELOPER</h2>
-                        <div class="profile_button">
+                        <div id="profile_button" class="profile_button about_me">
                             <h3>ABOUT ME</h3>
                         </div>
                     </div>
+                    <div class="about_me_area">
+                        <div class="about_me_text">
+                            <code>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            </code>
+                        </div>
+                    </div>
                 </div>
+                <p class="projects_header"><b>PROJECTS</b></p>
                 <div class="project_template">
                     <project-template
-                        img="public/img/placeholder.jpg"
+                        id="pr1"
+                        img="public/img/infinite-run.png"
                         bgColor="white"
                         txtColor="black"
                     ></project-template>
                     <project-template
-                        img="public/img/placeholder.jpg"
-                        bgColor="black"
-                        txtColor="white"
+                        id="pr2"
+                        img="public/img/infinite-run.png"
+                        bgColor="white"
+                        txtColor="black"
                     ></project-template>
                     <project-template
-                        img="public/img/placeholder.jpg"
+                    id="pr3"
+                    img="public/img/infinite-run.png"
+                    bgColor="white"
+                    txtColor="black"
+                    ></project-template>
+                    <project-template
+                        id="pr4"
+                        img="public/img/infinite-run.png"
                         bgColor="white"
                         txtColor="black"
                     ></project-template>
@@ -44,6 +62,7 @@
         </div>
 
         <!--<script src="glitch.js"></script>-->
+        <script src="main.js"></script>
         <script src="project_template.js"></script>
     </body>
 </html>

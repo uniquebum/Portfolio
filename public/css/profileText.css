@@ -1,42 +1,6 @@
-@keyframes moveRight {
-    from {
-        left: -100%;
-        opacity: 0;
-    } to {
-        left: 0%;
-        opacity: 1;
-    }
-}
-
-@keyframes moveLeft {
-    0% {
-        left: 100%;
-        opacity: 0;
-    }
-    25% {
-        left: 100%;
-        opacity: 0;
-    } 
-    100% {
-        left: 0%;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .profile_text_area {
     position: absolute;
+    z-index: 1;
     float: top;
     top: 25%;
     left: 50%;
@@ -45,6 +9,8 @@
 
 .profile h1 {
     position: relative;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     letter-spacing: 8px;
     font-size: 40px;
@@ -100,4 +66,58 @@
     color: #000000;
     animation-name: fadeIn;
     animation-duration: 4.5s;
+}
+
+@keyframes moveRight {
+    from {
+        left: -100%;
+        opacity: 0;
+    } to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+    25% {
+        left: 100%;
+        opacity: 0;
+    } 
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveHigh {
+    from {
+        top: 25%;
+    } to {
+        top: 3.5%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

@@ -65,4 +65,13 @@
       animation-name: fadeIn;
       animation-duration: 4.5s;
   }
+
+  .about_me_text {
+    position: absolute;
+    width: 60%;
+    margin-left: 5%;
+    top: 31%;
+    color: white;
+    font-family: Arial, sans-serif;
+    }
 }
