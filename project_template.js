@@ -24,18 +24,20 @@ class projectTemplate extends HTMLElement {
                     margin-left: auto;
                     margin-right: auto;
                 }
+                h2, h3 {
+                    margin: 0;
+                    padding: 0;
+                }
             </style>
             <div class="template_body">
                 <div class="img_area">
                     <img src="${this.getAttribute("img")}" alt="img"/>
                 </div>    
                 <div class="text_area">
-                    <samp><h2>Infinite Run - <span>Javascript, HTML5/CSS</span></h2></samp>
-                    <p>
-                        HTML5 canvas based platformer game.
-                        Coded at around 2014 with plain JS and some simple
-                        AJAX queries to save high scores to server side text file.  
-                    </p>
+                    <samp><h2>${this.getAttribute("name")}</h2></samp>
+                    <samp><h3>${this.getAttribute("languages")}</h3></samp>
+                    <samp><h3>${this.getAttribute("year")}</h3></samp>
+                    <p>${this.getAttribute("text")}</p>
                 </div>
             </div>
         `

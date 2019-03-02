@@ -54,12 +54,19 @@ body {
 }
 
 .profile {
+    display: inline-block;
     position: relative;
+    background-color: black;
+    background-image: url("./../img/placeholder_profile.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     width: 100%;
+    height: 300px;
 }
 
-.profile img {
-    width: 100%;
+.profile-text-area {
+    display: inline-block;
 }
 
 .projects_header {
@@ -121,6 +128,11 @@ body {
     visibility: hidden;
 }
 
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
 @keyframes moveLeftTextBox {
     0% {
         width:100%;
