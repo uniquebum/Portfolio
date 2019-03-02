@@ -7,20 +7,23 @@ class projectTemplate extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 .template_body {
+                    position: relative;
                     background-color: ${this.getAttribute("bgColor")};
                     color: ${this.getAttribute("txtColor")};
-                    width: 90%;
-                    margin: auto;
+                    width: 300px;
+                    height: 350px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 .text_area {
-                    width: 70%;
+                    width: 80%;
                     margin-left: auto;
                     margin-right: auto;
                 }
                 .img_area img{
                     display: block;
-                    width: 70%;
-                    padding-bottom: 5px;
+                    width: 80%;
+                    padding-bottom: 0px;
                     margin-left: auto;
                     margin-right: auto;
                 }

@@ -62,7 +62,7 @@ body {
     background-position: center;
     background-size: 100%;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 .profile-text-area {
@@ -79,28 +79,14 @@ body {
 }
 
 .project_template {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-areas:
-        'pr1 pr2'
-        'pr3 pr4';
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #pr1 {
-    grid-area: pr1;
     margin-top: 10px;
 }
 #pr2 {
-    grid-area: pr2;
-    margin-top: 10px;
-}
-#pr3 {
-    grid-area: pr3;
-    margin-top: 10px;
-}
-#pr4 {
-    grid-area: pr4;
     margin-top: 10px;
 }
 
