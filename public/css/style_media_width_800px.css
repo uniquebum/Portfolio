@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .profile_text_area {
     position: absolute;
     float: top;
@@ -68,9 +68,9 @@
 
   .about_me_text {
     position: absolute;
-    width: 60%;
+    width: 95%;
     margin-left: 5%;
-    top: 31%;
+    top: 30%;
     color: white;
     font-family: Arial, sans-serif;
     }

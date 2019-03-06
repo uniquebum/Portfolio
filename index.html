@@ -9,11 +9,11 @@
         <div class="main_container">
             <div class="header">
                 <p class="header_text">CONTACT ME</p>
-                <p class="header_text">PROJECTS</p>
+                <p id="projects_btn" class="header_text">PROJECTS</p>
                 <p class="header_text about_me">ABOUT ME</p>           
             </div>
             <div class="site_body">
-                <div class="profile">
+                <div id="profile-header" class="profile">
                     <!--<img src="public/img/placeholder_profile2.jpg" alt="profile_img"/>-->
                     <div id="profile_text_area" class="profile_text_area">
                         <h1 id="name_h1">MIRO RUOPSA</h1>        
@@ -23,20 +23,27 @@
                         </div>
                     </div>
                     <div class="about_me_area">
-                        <div class="about_me_text">
-                            <code>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                
+                        <div id="about_me" class="about_me_text">
+                            <code>
+                                I'm a self trained software developer. I graduated
+                                from space physics department in Oulu and I have
+                                a master's degree from physics. When I was working
+                                in space physics department I had to work with
+                                Matlab and apply different kinds of data analysis methods
+                                on big data sets. During my physics studies I also
+                                got myself a vocational teacher's degree. <br><br>
+                                After I finished my studies in physics department 
+                                in 2018 I started doing software development. I started
+                                off by holding 3 different programming courses for
+                                beginner level coders. First one was about Java Spring
+                                framework & MySQL, second was about JS React framework and 
+                                third one about plain JS and backend coding with Node.js
+                                and MongoDB.
                             </code>
                         </div>
                     </div>
                 </div>
-                <p class="projects_header"><b>PROJECTS</b></p>
+                <p class="projects_header"><b>PERSONAL PROJECTS</b></p>
                 <div class="project_template">
                         <project-template
                         id="pr1"
@@ -45,7 +52,8 @@
                         img="public/img/infinite-run.png"
                         name="Infinite Run"
                         languages="JS, PHP, HTML5/CSS"
-                        year="2014"
+                        year="2015"
+                        gitname="InfiniteRun"
                         text="HTML5 canvas based platformer game.
                         Coded with plain JS and some simple
                         AJAX queries to save high scores to 
@@ -59,46 +67,81 @@
                         name="Neural network"
                         languages="Java"
                         year="2018"
+                        gitname="NumberRecogNeuralNet"
                         text="Number recognition neural network.
                         Uses back propagation implementation and
                         includes versions for 2 different kinds of
-                        networks."
+                        network layouts."
                     ></project-template>
                     <project-template
-                    id="pr1"
-                    bgColor="white"
-                    txtColor="black"
-                    img="public/img/infinite-run.png"
-                    name="Infinite Run"
-                    languages="JS, PHP, HTML5/CSS"
-                    year="2014"
-                    text="HTML5 canvas based platformer game.
-                    Coded with plain JS and some simple
-                    AJAX queries to save high scores to 
-                    server side text file using PHP."
-                ></project-template>
-                <project-template
-                    id="pr2"
-                    bgColor="white"
-                    txtColor="black"
-                    img="public/img/number-recognition.png"
-                    name="Neural network"
-                    languages="Java"
-                    year="2018"
-                    text="Number recognition neural network.
-                    Uses back propagation implementation and
-                    includes versions for 2 different kinds of
-                    networks."
-                ></project-template>
+                        id="pr3"
+                        bgColor="white"
+                        txtColor="black"
+                        img="public/img/portfolio.png"
+                        name="This portfolio"
+                        languages="JS, HTML/CSS"
+                        year="2019"
+                        gitname="Portfolio"
+                        text="The portfolio includes usage of, e.g.,
+                        @keyframes, flexbox, shadow DOM, JS components,
+                        custom fonts etc."
+                    ></project-template>
+                    <project-template
+                        id="pr4"
+                        bgColor="white"
+                        txtColor="black"
+                        img="public/img/number-recognition.png"
+                        name="Convolutional NN"
+                        languages="Java"
+                        year="2019"
+                        text="Coming up..."
+                    ></project-template>
+                    <project-template
+                        id="pr5"
+                        bgColor="white"
+                        txtColor="black"
+                        img="public/img/number-recognition.png"
+                        name="Network socketing"
+                        languages="Java"
+                        year="2019"
+                        text="Coming up..."
+                    ></project-template>
+                    <project-template
+                        id="pr6"
+                        bgColor="white"
+                        txtColor="black"
+                        img="public/img/number-recognition.png"
+                        name="Java Spring demo"
+                        languages="Java (Spring), MySQL"
+                        year="2018"
+                        gitname="SpringMvcSqlForum"
+                        text="Just a little java spring
+                        demo showcasing my ability to work
+                        with the framework. Login/logout system
+                        uses MySQL. Passwords are obviously
+                        also encrypted."
+                    ></project-template>
+                    <project-template
+                        id="pr7"
+                        bgColor="white"
+                        txtColor="black"
+                        img="public/img/number-recognition.png"
+                        name="React project here?"
+                        languages="JS, React, HTML/CSS"
+                        year="2018"
+                        text="Coming up..."
+                    ></project-template>
                 </div>
             </div>
             <div class="footer">
-
+                <code id="the-email"></code>
             </div>
         </div>
 
         <!--<script src="glitch.js"></script>-->
+        <script src="profileHeader.js"></script>
         <script src="main.js"></script>
         <script src="project_template.js"></script>
+        <script src="insertEmail.js"></script>
     </body>
 </html>

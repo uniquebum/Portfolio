@@ -1,3 +1,6 @@
+/**
+ * ABOUT ME BUTTON & TEXT
+ */
 const aboutMe = function() {
     const aboutArea = document.querySelector(".about_me_area");
     aboutArea.style.display = "inline-block";
@@ -19,6 +22,33 @@ const aboutMe = function() {
 Array.from(document.getElementsByClassName("about_me"))
     .map(btn => {
         btn.addEventListener("click",aboutMe)
+    });
+
+
+/**
+ * PROJECTS BUTTON
+ */
+let scrollInterval;
+const scroll = function() {
+    //Set scroll speed
+    let speed = 3+10*((Math.tanh(window.pageYOffset/1000)+1)/2);
+    if (window.pageYOffset > 200) {
+        speed -= (pageYOffset/540)*(pageYOffset/540)*9;
+        if (speed<=0) speed=.5
+    }
+    window.scrollBy(0,speed);
+    
+    //Stop scrolling
+    if (scrollInterval && window.pageYOffset > 540) {
+        clearInterval(scrollInterval);
+    }
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        clearInterval(scrollInterval)
+    }
+}
+document.getElementById("projects_btn")
+    .addEventListener("click",() => {
+        scrollInterval = setInterval(scroll,5)
     });
 /**
  * TODO MAYBE

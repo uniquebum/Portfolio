@@ -19,6 +19,7 @@ class projectTemplate extends HTMLElement {
                     width: 80%;
                     margin-left: auto;
                     margin-right: auto;
+                    font-family: Arial, Helvetica, sans-serif;
                 }
                 .img_area img{
                     display: block;
@@ -40,6 +41,7 @@ class projectTemplate extends HTMLElement {
                     <samp><h2>${this.getAttribute("name")}</h2></samp>
                     <samp><h3>${this.getAttribute("languages")}</h3></samp>
                     <samp><h3>${this.getAttribute("year")}</h3></samp>
+                    <a href="https://github.com/uniquebum/${this.getAttribute("gitname")}">Github - ${this.getAttribute("gitname")}</a>
                     <p>${this.getAttribute("text")}</p>
                 </div>
             </div>
