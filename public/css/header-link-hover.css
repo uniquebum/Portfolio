@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "TypeWriter";
+    src: url("./../fonts/TravelingTypewriter.otf");
+}
+
+.header .header_text {
+    position: relative;
+    padding: 20px;
+    margin: 0;
+    font-family: TypeWriter;
+    font-size: 14px;
+    letter-spacing: 1px;
+    float:right;
+    margin-right: 3%;
+    top: 50%;
+
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+    text-decoration: none;
+    color: white;
+}
+
+.header .header_text:hover {
+    cursor: pointer;
+}
+
+.profile_button h3 span {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    margin-left: -2px;
+    margin-right: -2px;
+    -ms-transform: rotate3d(0,1,0,0deg);
+    transform: rotate3d(0,1,0,0deg);
+    transition: transform .4s, color .4s;
+}
+
+.profile_button:hover h3 span {
+    color: rgb(0, 0, 0);
+	-ms-transform: rotate3d(0,1,0,360deg);
+	transform: rotate3d(0,1,0,360deg);
+}
+
+.header .header_text span {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    margin-left: -2px;
+    margin-right: -2px;
+    -ms-transform: rotate3d(0,1,0,0deg);
+    transform: rotate3d(0,1,0,0deg);
+    transition: transform .4s, color .4s;
+}
+
+.header .header_text:hover span {
+    color: rgb(253, 214, 221);
+	-ms-transform: rotate3d(0,1,0,360deg);
+	transform: rotate3d(0,1,0,360deg);
+}
+
+.profile_button h3 span:nth-child(1),
+.header .header_text span:nth-child(1) {
+    transition-delay: 0s
+}
+.profile_button h3 span:nth-child(2),
+.header .header_text span:nth-child(2) {
+    transition-delay: 0.02s
+}
+.profile_button h3 span:nth-child(3),
+.header .header_text span:nth-child(3) {
+    transition-delay: 0.04s
+}
+.profile_button h3 span:nth-child(4),
+.header .header_text span:nth-child(4) {
+    transition-delay: 0.06s
+}
+.profile_button h3 span:nth-child(5),
+.header .header_text span:nth-child(5) {
+    transition-delay: 0.08s
+}
+.profile_button h3 span:nth-child(6),
+.header .header_text span:nth-child(6) {
+    transition-delay: 0.1s
+}
+.profile_button h3 span:nth-child(7),
+.header .header_text span:nth-child(7) {
+    transition-delay: 0.12s
+}
+.profile_button h3 span:nth-child(8),
+.header .header_text span:nth-child(8) {
+    transition-delay: 0.14s
+}
+.profile_button h3 span:nth-child(9),
+.header .header_text span:nth-child(9) {
+    transition-delay: 0.16s
+}

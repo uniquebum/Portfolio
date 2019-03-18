@@ -57,7 +57,7 @@
       text-align: center;
       top:50%;
       transform: translateY(-50%);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: TypeWriter;
       letter-spacing: 1px;
       font-weight: 300;
       font-size: 9px;
@@ -73,5 +73,10 @@
     top: 30%;
     color: white;
     font-family: Arial, sans-serif;
+    }
+
+    @font-face {
+        font-family: "TypeWriter";
+        src: url("./../fonts/TravelingTypewriter.otf");
     }
 }
