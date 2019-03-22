@@ -55,9 +55,6 @@
 
 .profile .profile_button:hover {
     background-color: rgb(253, 214, 221);
-    /*background: linear-gradient(to right, rgb(253, 214, 221) 50%, #FFF 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;*/
     cursor: pointer;
 }
 
@@ -71,7 +68,6 @@
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 13px;
-    color: #000000;
     animation-name: fadeIn;
     animation-duration: 4.5s;
 }

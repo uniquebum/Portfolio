@@ -5,15 +5,19 @@
 
 .header .header_text {
     position: relative;
-    padding: 20px;
+    width: 160px;
+    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin: 0;
     font-family: TypeWriter;
     font-size: 14px;
     letter-spacing: 1px;
     float:right;
-    margin-right: 3%;
+    margin-right: 2%;
     top: 50%;
 
+    text-align: center; 
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 
@@ -22,9 +26,71 @@
 }
 
 .header .header_text:hover {
-    cursor: pointer;
+    cursor: pointer; 
 }
 
+.header .header_text::before {
+    position: absolute;
+    left: 13px;
+    height: 0px;
+    content: "";
+    margin: 0;
+    top: 50%;
+
+    transform: translateY(-50%) rotateZ(20deg);
+    -ms-transform: translateY(-50%) rotateZ(20deg);
+
+    text-decoration: none;
+    color: white;
+
+    border-left: solid 2px transparent;
+    box-sizing: border-box;
+    transition: border-left .75s, transform .5s, height .5s;
+}
+.header .header_text:hover::before {
+    position: absolute;
+    left: 13px;
+    height: 100px;
+    content: "";
+    cursor: pointer;
+    color: white;  
+
+    transform: translateY(-50%) rotateZ(20deg);
+    -ms-transform: translateY(-50%) rotateZ(20deg);
+
+    border-left: solid 2px rgb(253, 214, 221);
+}
+.header .header_text::after {
+    position: absolute;
+    left: 170px;
+    height: 0px;
+    content: "";
+    margin: 0;
+    top: 50%;
+
+    transform: translateY(-50%) rotateZ(20deg);
+    -ms-transform: translateY(-50%) rotateZ(20deg);
+
+    text-decoration: none;
+    color: white;
+
+    border-left: solid 2px transparent;
+    box-sizing: border-box;
+    transition: border-left .75s, transform .5s, height .5s;
+}
+.header .header_text:hover::after {
+    position: absolute;
+    left: 170px;
+    height: 100px;
+    content: "";
+    cursor: pointer;
+    color: white;  
+
+    transform: translateY(-50%) rotateZ(20deg);
+    -ms-transform: translateY(-50%) rotateZ(20deg);
+
+    border-left: solid 2px rgb(253, 214, 221);
+}
 .profile_button h3 span {
     display: inline-block;
     position: relative;
