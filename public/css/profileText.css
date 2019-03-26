@@ -37,6 +37,7 @@
 
 .profile_text_area .profile_button {
     position: relative;
+    display: inline-block;
     width: 180px;
     height: 50px;
     margin-left: 50%;

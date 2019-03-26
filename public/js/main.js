@@ -2,21 +2,41 @@
  * ABOUT ME BUTTON & TEXT
  */
 const aboutMe = function() {
+    /**
+     * Animate about_me_area
+     */
     const aboutArea = document.querySelector(".about_me_area");
     aboutArea.style.display = "inline-block";
     aboutArea.style.animationName = "moveLeftTextBox";
-    aboutArea.style.animationDuration = "2s";
+    aboutArea.style.animationDuration = "1s";
     
+    /**
+     * Fade out profile_button
+     */
     const profBtn = document.getElementById("profile_button");
     profBtn.style.animationName = "fadeOut";
-    profBtn.style.animationDuration = "2s";
+    profBtn.style.animationDuration = ".5s";
     profBtn.style.opacity = "0";
+    setTimeout(() => {
+        profBtn.style.display = "none";
+    },500)
 
+    /**
+     * Move profile_text_area up
+     */
     const profArea = document.getElementById("profile_text_area");
-    //profArea.style.left = "0%";
     profArea.style.top = "3.5%";
     profArea.style.animation = "moveHigh";
-    profArea.style.animationDuration = "2s";
+    profArea.style.animationDuration = "1s";
+
+    /**
+     * Animate profile description text
+     */
+    const lines = document.getElementsByClassName("txt_line");
+    for (let i = 0; i < lines.length; i++) {
+        lines[i].style.animation = "fadeIn 1.5s forwards";
+        lines[i].style.animationDelay = .1+i/30+"s";
+    }
 }
 
 Array.from(document.getElementsByClassName("about_me"))
@@ -25,31 +45,6 @@ Array.from(document.getElementsByClassName("about_me"))
     });
 
 
-/**
- * PROJECTS BUTTON
- */
-let scrollInterval;
-const scroll = function() {
-    //Set scroll speed
-    let speed = 3+10*((Math.tanh(window.pageYOffset/1000)+1)/2);
-    if (window.pageYOffset > 200) {
-        speed -= (pageYOffset/540)*(pageYOffset/540)*9;
-        if (speed<=0) speed=.5
-    }
-    window.scrollBy(0,speed);
-    
-    //Stop scrolling
-    if (scrollInterval && window.pageYOffset > 540) {
-        clearInterval(scrollInterval);
-    }
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-        clearInterval(scrollInterval)
-    }
-}
-document.getElementById("projects_btn")
-    .addEventListener("click",() => {
-        scrollInterval = setInterval(scroll,5)
-    });
 /**
  * TODO MAYBE
  * Async function for animating name to text

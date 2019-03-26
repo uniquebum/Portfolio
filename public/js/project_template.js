@@ -12,8 +12,17 @@ class projectTemplate extends HTMLElement {
                     color: ${this.getAttribute("txtColor")};
                     width: 300px;
                     height: 350px;
+                    padding-top: 20px;
                     margin-left: auto;
                     margin-right: auto;
+
+                    box-shadow: 0px 1px 0px 0px #FFF;
+                    transition: box-shadow .5s;
+                }
+                .template_body:hover {
+                    box-shadow: 
+                        0px -1px 0px 0px #606060, 
+                        0px 1px 0px 0px #606060;
                 }
                 .text_area {
                     width: 80%;
@@ -27,10 +36,18 @@ class projectTemplate extends HTMLElement {
                     padding-bottom: 0px;
                     margin-left: auto;
                     margin-right: auto;
+                    box-shadow: 
+                        1px -1px 0 #767676,
+                        -1px 2px 1px #969494, 
+                        -2px 4px 1px #adadad, 
+                        -3px 6px 1px #fcfbfb;
                 }
                 h2, h3 {
                     margin: 0;
                     padding: 0;
+                }
+                h2 {
+                    padding-top: 4px;
                 }
             </style>
             <div class="template_body">

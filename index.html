@@ -9,6 +9,7 @@
     <body class="preload">
         <div class="main_container">
             <div class="header">
+                <a href="#footer">
                 <p class="header_text">
                     <span>C</span>
                     <span>O</span>
@@ -20,6 +21,8 @@
                     <span>M</span>
                     <span>E</span>
                 </p>
+                </a>
+                <a href="#projects_header">
                 <p id="projects_btn" class="header_text">
                     <span>P</span>
                     <span>R</span>
@@ -30,6 +33,7 @@
                     <span>T</span>
                     <span>S</span>
                 </p>
+                </a>
                 <p class="header_text about_me">
                     <span>A</span>
                     <span>B</span>
@@ -60,25 +64,19 @@
                     <div class="about_me_area">
                         <div id="about_me" class="about_me_text">
                             <code>
-                                I'm a self trained software developer. I graduated
-                                from space physics department in Oulu and I have
-                                a master's degree from physics. When I was working
-                                in space physics department I had to work with
-                                Matlab and apply different kinds of data analysis methods
-                                on big data sets. During my physics studies I also
-                                got myself a vocational teacher's degree. <br><br>
-                                After I finished my studies in physics department 
-                                in 2018 I started doing software development. I started
-                                off by holding 3 different programming courses for
-                                beginner level coders. First one was about Java Spring
-                                framework & MySQL, second was about JS React framework and 
-                                third one about plain JS and backend coding with Node.js
-                                and MongoDB.
+                            <span class="txt_line">I'm a self trained software developer. I graduated from space physics department in Oulu</span>
+                            <span class="txt_line">and I have a master's degree from physics. When I was working in space physics</span>                    
+                            <span class="txt_line">department I had to work with Matlab and apply different kinds of data analysis methods</span>                            
+                            <span class="txt_line">on big data sets. During my physics studies I also got myself a vocational teacher's degree. <br><br></span>
+                            <span class="txt_line">After I finished my studies in physics department in 2018 I started doing software development.</span>
+                            <span class="txt_line">I started off by holding 3 different programming courses for beginner level coders.</span>
+                            <span class="txt_line">First one was about Java Spring framework & MySQL, second was about JS React framework and</span>                         
+                            <span class="txt_line">third one about plain JS and backend coding with Node.js and MongoDB.</span>                            
                             </code>
                         </div>
                     </div>
                 </div>
-                <p class="projects_header"><b>PERSONAL PROJECTS</b></p>
+                <p class="projects_header" id="projects_header">PERSONAL PROJECTS</p>
                 <div class="project_template">
                         <project-template
                         id="pr1"
@@ -153,13 +151,15 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <code id="the-email"></code>
         </div>
         <!--<script src="glitch.js"></script>-->
-        <script src="profileHeader.js"></script>
-        <script src="main.js"></script>
-        <script src="project_template.js"></script>
-        <script src="insertEmail.js"></script>
+        <!--<script src="aboutMeTextAnim.js"></script>-->
+        <script src="./public/js/shadowAnimate.js"></script>
+        <script src="./public/js/profileHeader.js"></script>
+        <script src="./public/js/main.js"></script>
+        <script src="./public/js/project_template.js"></script>
+        <script src="./public/js/insertEmail.js"></script>
     </body>
 </html>

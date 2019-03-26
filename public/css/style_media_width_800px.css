@@ -1,10 +1,10 @@
 @media only screen and (max-width: 850px) {
   .profile_text_area {
-    position: absolute;
-    float: top;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+        position: absolute;
+        float: top;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
   }
 
   .profile h1 {
