@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcYLJoUAAAAAPT5Wty5t8LvIymECpN86y_hRe-t"></script>
+        <!--6LcYLJoUAAAAAPT5Wty5t8LvIymECpN86y_hRe-t-->
         <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="public/css/profileText.css"/>
         <link rel="stylesheet" type="text/css" href="public/css/header-link-hover.css"/>
@@ -78,7 +80,7 @@
                 </div>
                 <p class="projects_header" id="projects_header">PERSONAL PROJECTS</p>
                 <div class="project_template">
-                        <project-template
+                    <project-template
                         id="pr1"
                         bgColor="white"
                         txtColor="black"
@@ -116,8 +118,9 @@
                         year="2019"
                         gitname="Portfolio"
                         text="The portfolio includes usage of, e.g.,
-                        @keyframes, flexbox, shadow DOM, JS components,
-                        custom fonts etc."
+                        flexbox, shadow DOM, JS components, 
+                        custom animations made by using @keyframes & 
+                        transitions etc."
                     ></project-template>
                     <project-template
                         id="pr4"
@@ -131,7 +134,8 @@
                         text="HTTP socket handler made from 
                         scratch without additional frameworks.
                         Also, the project includes a few unit 
-                        tests for the sockets."
+                        tests for the sockets. SSL socketing 
+                        coming up..."
                     ></project-template>
                     <project-template
                         id="pr5"
@@ -161,5 +165,13 @@
         <script src="./public/js/main.js"></script>
         <script src="./public/js/project_template.js"></script>
         <script src="./public/js/insertEmail.js"></script>
+
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcYLJoUAAAAAPT5Wty5t8LvIymECpN86y_hRe-t', {action: 'homepage'}).then(function(token) {
+                    
+                });
+            });
+        </script>
     </body>
 </html>

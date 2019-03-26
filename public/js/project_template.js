@@ -11,7 +11,7 @@ class projectTemplate extends HTMLElement {
                     background-color: ${this.getAttribute("bgColor")};
                     color: ${this.getAttribute("txtColor")};
                     width: 300px;
-                    height: 350px;
+                    height: 100%;
                     padding-top: 20px;
                     margin-left: auto;
                     margin-right: auto;
@@ -21,18 +21,18 @@ class projectTemplate extends HTMLElement {
                 }
                 .template_body:hover {
                     box-shadow: 
-                        0px -1px 0px 0px #606060, 
-                        0px 1px 0px 0px #606060;
+                        0px -1px 1px 0px #c8c8c8, 
+                        0px 1px 0px 0px #c8c8c8;
                 }
                 .text_area {
-                    width: 80%;
+                    width: 90%;
                     margin-left: auto;
                     margin-right: auto;
                     font-family: Arial, Helvetica, sans-serif;
                 }
                 .img_area img{
                     display: block;
-                    width: 80%;
+                    width: 90%;
                     padding-bottom: 0px;
                     margin-left: auto;
                     margin-right: auto;
