@@ -31,44 +31,74 @@
       type="text/css"
       href="public/css/media_width_780px_profileText.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/css/media_width_640px_style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/css/media_width_640px_profileText.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/css/media_width_640px_header.css"
+    />
   </head>
   <body class="preload">
     <div class="main_container">
       <div class="header">
-        <a href="#footer">
-          <p class="header_text">
-            <span>C</span>
-            <span>O</span>
-            <span>N</span>
-            <span>T</span>
-            <span>A</span>
-            <span>C</span>
-            <span>T&nbsp;</span>
-            <span>M</span>
-            <span>E</span>
-          </p>
-        </a>
-        <a href="#projects_header">
-          <p id="projects_btn" class="header_text">
-            <span>P</span>
-            <span>R</span>
-            <span>O</span>
-            <span>J</span>
-            <span>E</span>
-            <span>C</span>
-            <span>T</span>
-            <span>S</span>
-          </p>
-        </a>
-        <p class="header_text about_me">
-          <span>A</span>
-          <span>B</span>
-          <span>O</span>
-          <span>U</span>
-          <span>T&nbsp;</span>
-          <span>M</span>
-          <span>E</span>
-        </p>
+
+        <nav id="mobile-header" role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <li><a class="about_me" href="#">About me</a></li>
+                <li><a href="#projects_header">Projects</a></li>
+                <li><a href="#footer">Contact me</a</li>
+            </ul> 
+        </nav>
+        <div id="non-mobile-header">
+            <a href="#footer">
+            <p class="header_text">
+                <span>C</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>C</span>
+                <span>T&nbsp;</span>
+                <span>M</span>
+                <span>E</span>
+            </p>
+            </a>
+            <a href="#projects_header">
+            <p id="projects_btn" class="header_text">
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>J</span>
+                <span>E</span>
+                <span>C</span>
+                <span>T</span>
+                <span>S</span>
+            </p>
+            </a>
+            <p class="header_text about_me">
+                <span>A</span>
+                <span>B</span>
+                <span>O</span>
+                <span>U</span>
+                <span>T&nbsp;</span>
+                <span>M</span>
+                <span>E</span>
+            </p>
+        </div>
       </div>
       <div class="site_body">
         <div id="profile-header" class="profile">
@@ -215,15 +245,5 @@
     <script src="./public/js/main.js"></script>
     <script src="./public/js/project_template.js"></script>
     <script src="./public/js/insertEmail.js"></script>
-
-    <script>
-      grecaptcha.ready(function() {
-        grecaptcha
-          .execute("6LcYLJoUAAAAAPT5Wty5t8LvIymECpN86y_hRe-t", {
-            action: "homepage"
-          })
-          .then(function(token) {});
-      });
-    </script>
   </body>
 </html>
