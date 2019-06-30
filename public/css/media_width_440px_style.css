@@ -1,0 +1,219 @@
+@media only screen and (max-width: 440px) {
+  :root {
+    --left1: -1px;
+    --left2: -2px;
+    --left3: -3px;
+    --left4: -4px;
+    --left5: -5px;
+    --top1: 2px;
+    --top2: 4px;
+    --top3: 6px;
+    --top4: 8px;
+    --top5: 10px;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+  }
+  html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  .preload {
+    transition: none !important;
+  }
+
+  .main_container {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .header {
+    position: relative;
+    height: 100px;
+    margin: 0;
+    background-color: #000000;
+    color: #eeeeee;
+  }
+
+  .site_body {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .profile {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    background-image: url("./../img/placeholder_profile.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 350px;
+  }
+
+  .profile-text-area {
+    display: inline-block;
+  }
+
+  .projects_header {
+    position: relative;
+    font-size: 42px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Autobus-bold;
+    font-weight: 900;
+
+    color: #131313;
+    letter-spacing: 0.15em;
+    text-shadow: 1px -1px 0 #767676, var(--left1) var(--top1) 1px #969494,
+      var(--left2) var(--top2) 1px #adadad, var(--left3) var(--top3) 1px #cecccc,
+      var(--left4) var(--top4) 1px #e4e3e3, var(--left5) var(--top5) 1px #fcfbfb;
+  }
+
+  .project_template {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #pr1 {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #pr2 {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #pr3 {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #pr4 {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #pr5 {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .about_me_area {
+    position: absolute;
+    z-index: 0;
+    top: 2.5%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 95%;
+    float: top;
+  }
+
+  .about_me_text {
+    position: absolute;
+    width: 95%;
+    margin-left: 2.5%;
+    top: 25%;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .txt_line {
+    opacity: 0;
+  }
+
+  #name_p {
+    visibility: hidden;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    height: 150px;
+  }
+  #the-email {
+    position: relative;
+    top: 10px;
+  }
+  @font-face {
+    font-family: "Autobus-bold";
+    src: url("./../fonts/Autobus-Bold.ttf");
+  }
+
+  @keyframes moveLeftTextBox {
+    0% {
+      width: 100%;
+      left: 100%;
+    }
+    100% {
+      width: 100%;
+      left: 0%;
+    }
+  }
+
+  /*
+    * Animate profile description text
+    
+    :root {
+        --left: 0;
+        --top: 0;
+        --rot: 120deg;
+    }
+    
+    .animText {
+        position: relative;
+        display: inline-block;
+        left: var(--left);
+        top: var(--top);
+        transform: rotate3d(0,0,1,var(--rot));
+        -ms-transform: rotate3d(0,0,1,var(--rot));
+    }
+    
+    @keyframes animateIn {
+        to {
+            left: 0;
+            top: 0;
+            transform: rotate3d(0,0,1,0deg);
+            -ms-transform: rotate3d(0,0,1,0deg);
+        }
+    }
+    */
+}
